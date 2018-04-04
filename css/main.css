@@ -89,8 +89,19 @@ src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 
-.input-group{
+.input-group {
 	border: 1px solid #999;
+}
+
+#inputEmail{
+	border: 1px solid #999;
+	border-radius: 0px;
+
+}
+
+#inputEmail:focus{
+	border: 1px solid #00ff00;
+
 }
 
 .form-control{
