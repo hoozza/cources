@@ -5,13 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	
-	<title>Test project</title>
+	<title>Test project on Vue</title>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.maskedinput.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 
 	<script>
     $(function(){
@@ -142,11 +143,8 @@
 		</div>
 
 		<div class="row">
-			
-		
 
 			<div class="col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
-
 
 					<div class="checkbox">
 						    <label>
@@ -154,37 +152,26 @@
 			    			</label>
 					</div>
 
-					<div class="inputCurrency" style="width: 100%" id="emailBox">
-		    				<div class="custom-input">
-		    					<input type="text" class="custom-input" id="inputEmail" placeholder="Ваш e-mail" onclick="activeInput(1);" onblur="deActiveInput(1);">
-		    				</div>
-		    			
-		    			</div>
 
-					
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Ваш e-mail">
+              </div>
+
+
 		    			<label for="inputSumm">Сумма перевода</label>
 
-		    			<div class="inputCurrency" id="transactionSummBox">
-
-		    				<div class="custom-input">
-
-		    				<input type="text" class="custom-input" id="inputTransactionSumm" placeholder="От 500 до 500000"  onclick="activeInput(2);" onblur="deActiveInput(2);">
-		    				
-		    				</div>
-		    				
-		    				<div class="crn">BYN</div>
-		    			</div>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="От 500 до 500000">
+                <span class="input-group-addon">BYN</span>
+              </div>
 				
 
-					
-		    			<label for="inputSummary">Итоговая сумма</label>
-		    			<div class="inputCurrency" id="totalSummBox" >
-		    				<div class="custom-input">
-		    					<input type="text" class="custom-input" id="totalSumm" placeholder="От 680 до 530150" onclick="activeInput(3);" onblur="deActiveInput(3);">
-							</div>
-						    
-						    <div class="crn">BYN</div>
-		    			</div>
+            <label for="inputSummary">Итоговая сумма</label>
+
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="От 680 до 530150">
+              <span class="input-group-addon">BYN</span>
+            </div>
 					
 
 					<div class="checkbox hidden-lg hidden-md">

@@ -89,6 +89,23 @@ src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 
+.input-group{
+	border: 1px solid #999;
+}
+
+.form-control{
+border:none ;
+}
+
+.form-control:focus {
+	border: 1px solid #00ff00;
+}
+
+.input-group-addon  {
+	background: white;
+	border: none;
+}
+
 
 
 .brand-card{
@@ -99,10 +116,8 @@ src: url("../fonts/OpenSans-Regular.ttf");
 	
 }
 
-
 #currency{
 
-	
 	display: table-cell;
 }
 
