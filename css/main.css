@@ -14,10 +14,6 @@ input::-webkit-inner-spin-button {
 	font-weight: bold;
 }
 
-.test-class{
-
-
-}
 
 .custom-input input:focus{
 	outline: none;
