@@ -1,0 +1,21 @@
+body {    background-color: #313335;    }
+
+form {
+    background-color: #2B2B2B;
+}
+.card {    box-shadow: 0 0 0;    }
+
+.text {    color: #CB6C2E;    }
+
+button {
+    background-color: #08436F;
+}
+
+.my-dropdown-menu {    background-color: #313335;    }
+.my-dropdown-menu li:hover {    background-color: #2B2B2B;   }
+
+.form-control:focus {    border: 1px solid #2B2B2B !important;    }
+
+#fa-question {
+    color: #CB6C2E;
+}

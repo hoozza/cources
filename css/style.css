@@ -1,0 +1,188 @@
+/* general----------------------------------------------------- */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+form {
+    margin: 50px auto;
+    max-width: 830px;
+    min-width: 400px;
+    background-color: #F8F8F8;
+    padding: 20px 40px 30px;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+.text {
+    color: #8A8A8B;
+    font-weight: bold;
+}
+
+/* dropdown menu for changing page style----------------------- */
+.my-dropdown {
+    position: relative;
+    margin: auto;
+    max-width: 830px;
+    min-width: 400px;
+    margin-bottom: 10px;
+}
+.my-dropdown button {    height: 25px;    }
+.my-dropdown button:hover {    text-shadow: 0 0 5px #fff;    }
+#dropdown_button {    background: #073F6E;    }
+
+.my-dropdown-menu {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    z-index: 9999;
+    display: none;
+    background: #073F6E;
+}
+.my-dropdown-menu li {    
+    list-style-type: none;    
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 3px;
+} 
+.my-dropdown-menu li:hover {
+    text-shadow: 0 0 5px #fff;
+    cursor: pointer;
+    background: #0E4675;
+}
+
+/* button------------------------------------------------------ */
+button {
+    width: 100%;
+    min-width: 360px;
+    height: 40px;
+    border: 0;
+    background: #49914D;
+    color: #fff !important;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover {
+    box-shadow: 0 0 10px 2px #073F6E;
+    background: #073F6E;
+}
+button:focus {    outline: none;    }
+
+/* cards------------------------------------------------------- */
+.card {
+    height: 210px;
+    width: 360px;
+    background-color: #fff;
+    box-shadow: 0 10px 50px 10px #D9D9D9;
+    border-radius: 15px;
+    margin: 0 auto 20px;
+    padding: 60px 30px;
+}
+.text_inside_card {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.date_block_inside_card {
+    width: 150px;
+}
+.date_block_inside_card p {    margin: 20px 0 5px;    }
+.date_block_inside_card input {    width: 28px;    }
+
+.cvc_block {
+    position: relative;
+    top: -41px;
+    right: -200px;
+    width: 100px;
+}
+.cvc_block p {    margin: -5px 0 5px;    }
+.cvc_block input {    width: 70px;    }
+
+.input_inside_card {
+    border: 0;
+    border-bottom: 1px solid #000;
+    width: 300px;
+    margin: 0 auto;
+    outline: none;
+    text-align: center;
+    font-weight: bold;
+}
+.input_inside_card::placeholder, .input_inside_card::placeholder {    color: #BFBEBD;    }
+.input_inside_card:focus {    border-bottom: 1px solid #49914D;    }
+
+/* brand------------------------------------------------------- */
+#visa, #maestro, #mastercard {
+    position: absolute;
+    top: 60px;
+    right: 50px;
+	height: 45px;
+    visibility: hidden;
+}
+
+/* checkboxes-------------------------------------------------- */
+.check_email_label {
+    margin-bottom: -5px;
+    cursor: pointer;
+}
+.checkbox_add_message {
+    margin-bottom: -5px;
+    cursor: pointer;
+}
+#check_email, #add_message {
+    cursor: pointer;
+}
+
+/* inputs outside the card------------------------------------- */
+#email, #transfer_amount, #result_amount {
+    height: 50px;
+    border-radius: 0;
+    font-size: 22px;
+    color: #666;
+    font-weight: bold;
+}
+.input-group {
+    height: 50px;
+    margin: 0 0 15px 0;
+}
+.input-group-addon{    border-radius: 0 !important;    }
+
+#email::placeholder, #transfer_amount::placeholder, #result_amount::placeholder {
+    color: #BFBEBD;
+    font-size: 20px;
+    font-weight: bold;
+}
+.form-control:focus {    border: 1px solid #D2D2D2 !important;    }
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+/* message----------------------------------------------------- */
+#message {   
+    position: relative;
+    display: none;
+    border: 1px solid #D2D2D2;
+    resize: none;    
+    overflow: auto;
+    width: 100%;
+    height: 140px;
+    padding: 5px 0 0 10px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 15px;
+}
+#message::placeholder {
+    color: #BFBEBD;
+    font-size: 20px;
+    font-weight: bold;
+}    
+#message:focus {    outline: none;    }
+
+/* adaptation-------------------------------------------------- */
+@media screen and (max-width: 768px) {
+    form {
+        padding: 20px 20px 20px;
+    }
+}
