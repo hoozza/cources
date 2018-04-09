@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	
-	<title>Test project on Vue</title>
+	<title>Project</title>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -45,7 +45,6 @@
 					</div>
 
 					<div class="input-sender-card">Номер карты<br>
-
 							<input  onKeyUp="brandingCard();" type="text" id="inputSenderCard">
 					</div>
 
@@ -87,18 +86,14 @@
 								<div id="CVV" style="display: table-cell;">CVV</div>
 								<div id="slash" style="display: table-cell;">/</div>
 								<div id="CVC" style="display: table-cell;">CVC </div>
+								<span class="glyphicon glyphicon-question-sign" style="margin-left: 5px;" data-toggle="tooltip" data-placement="top" title="CVV-код – это трехзначный код для проверки подлинности Вашей карты.Его можно найти на обратной стороне карты – это 3 цифры рядом с местом для подписи" ></span>
 
-								 <span class="glyphicon glyphicon-question-sign" style="margin-left: 5px;" data-toggle="tooltip" data-placement="top" title="CVV-код – это трехзначный код для проверки подлинности Вашей карты.Его можно найти на обратной стороне карты – это 3 цифры рядом с местом для подписи" ></span>	
-					
 							</div>
 
-							
 
 							<input type="text" maxlength="3"  id="CVV-input" style="width: 40px; text-align:center">
 
 						</div>
-
-
 
 						</div>
 
@@ -116,30 +111,26 @@
 
 							<div class="recipient-form">
 
-							<div class="recipient-card center-block">
+								<div class="recipient-card center-block">
 
-							<div class="brand-card">
+									<div class="brand-card">
 
 									<div id="visa-recipient"><img src="res/visa.svg" height="110%" width="110%"></div>
 									<div id="maestro-recipient"><img src="res/maestro.svg" height="110%" width="110%"></div>
 									<div id="mastercard-recipient"><img src="res/mastercard.svg" height="110%" width="110%"></div>
 
-							</div>
-							
-									<div class="input-sender-card">Номер карты<br>
+								</div>
+
+								<div class="input-sender-card">Номер карты<br>
 
 										<input onKeyUp="brandingCard();" id="inputRecipientCard">
 
-									</div>
-
 								</div>
-								
-							
+
 							</div>
+
 				</div>
-
-				
-
+			</div>
 		</div>
 
 
@@ -237,7 +228,7 @@ $(function(){
 
 
 	<script src="js/config.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 
 </body>
 </html>
