@@ -6,14 +6,6 @@ input::-webkit-inner-spin-button {
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
 }
 
-.sender-form input, .recipient-form input {
-	width: 100%;
-	border: none;
-	border-bottom: 1px solid #000;
-	font-size: 16pt;
-	font-weight: bold;
-}
-
 
 .custom-input input:focus{
 	outline: none;
@@ -31,6 +23,7 @@ input:focus{
 font-family: "OpenSans";
 src: url("../fonts/OpenSans-Regular.ttf"); 
 }
+
 
 .container{
 	font-family: "OpenSans";
@@ -50,7 +43,7 @@ src: url("../fonts/OpenSans-Regular.ttf");
 }
 
 
-.card{
+.card-content{
 
 	padding-left: 20px;
 	padding-right: 20px;
@@ -60,6 +53,15 @@ src: url("../fonts/OpenSans-Regular.ttf");
 	background: #fff;
 	box-shadow: 0px 3px 20px 0px rgba(115, 115, 115, 0.5);
 
+}
+
+
+.card input{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #000;
+	font-size: 16pt;
+	font-weight: bold;
 }
 
 
@@ -164,7 +166,7 @@ border:none ;
 }
 
 #btn{
-
+	margin-top: 20px;
 	margin-bottom: 20px;
 }
 
